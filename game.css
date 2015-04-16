@@ -1,0 +1,67 @@
+/* OVERALL */
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 5%;
+}
+
+/* TITLE & FORMATTING */
+.title-color-font{
+	font-family: "Fontdiner Swanky", "Lobster";
+	font-color:#233E74;
+}
+.body-title-color-font{
+	font-color: #778EAA;
+}
+h3{
+	font-family: "Walter Turncoat";
+}
+
+/*TEXT AND CHOICES*/
+.question-div{
+	background-color:#F0F7FF;
+	border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	padding: 25px;
+	border-radius: 2em;
+}
+.images{
+	float: right;
+	width: 45%;
+	display: inline-block;
+	clear: both;
+	border-radius:0.5em;
+	margin-top:40px;
+	padding: 0;
+	/*float:right;
+	width: 35%;
+	display:inline-block;
+	margin-left: 40px;*/
+}
+.questions{
+	/*float: left;*/
+	width: 50%;
+	display: inline-block;
+	padding: 0;
+	/*float:left;
+	width: 35%;
+	display: inline-block;*/
+	font-size: 17px;
+}
+.choice-div{
+	float: bottom;
+}
+.choice-header{
+	font-family: "Walter Turncoat";
+	font-size:18px;
+}
+.choice-desc{
+	font-size:16px;
+}
+#made-by {
+	margin-top: 100px;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intro js</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="game.css">
+
+	<!-- Google font API -->
+	 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster|Fontdiner+Swanky|Oswald|Open+Sans+Condensed:300|Walter+Turncoat:400">
+
+</head>
+<body>
+
+	<h1 class="title-color-font">Knockout Choose Your Own Adventure Game
+		<br><small>Made By Some Bitch</small></h1>
+
+
+	<div id='question-here'>
+
+		<br>
+
+		<h3>MINUTES LEFT: <span class="number" data-bind="text: timeRemaining"/> minutes</h3>
+		<h3>POINTS LEFT: <span class="number" data-bind="text: points"/> points</h3>
+
+		<br>
+
+		<div class="question-div">
+			<div class="questions"><p data-bind="text: activequestion"></p></div>
+			<img class="images" alt="game image" data-bind="attr: { src: activeimage }">
+		</div>
+
+		<p class="body-title-color-font" data-bind="foreach: activechoices">
+			<br><br>
+			
+			<b><a href='#' data-bind='click: $root.nextScene'>
+				<span class='choice-header' data-bind='text: answer'/>
+			</a></b>
+			
+			<br>
+
+			<span class="choice-desc" data-bind='text: desc'/>
+			
+		</p>
+
+	</div>
+
+<!-- 	<div id="made-by">
+		<p>This was made with Knockout.js 3.3.0, jQuery, CSS, HTML and a little bit of love. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+		<img alt="game image" data-bind="attr: { src: activeimage }" height="50%" width="75%" 
+
+
+
+	</div> -->
+
+	<script src="https://code.jquery.com/jquery-git2.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+
+	<script src="game.js"></script>
+</body>
+</html>
