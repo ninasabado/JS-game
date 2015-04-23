@@ -17,8 +17,10 @@
 </head>
 <body>
 
-	<h1 class="title-color-font">'Dear Midterms We Are Never, Ever Getting Back Together'
-		<br><small>Made By Some Nina Sabado and Alejandra Figueroa</small></h1>
+	<div class="question-div">
+
+	<h1 class="title-color-font">'Dear Midterms: We Are Never, Ever Getting Back Together'
+		<br><small>Made By Nina Sabado and Alejandra Figueroa</small></h1>
 
 
 	<div id='question-here'>
@@ -30,10 +32,9 @@
 
 		<br>
 
-		<div class="question-div">
 			<div class="questions"><p data-bind="text: activequestion"></p></div>
 			<img class="images" alt="game image" data-bind="attr: { src: activeimage }">
-		</div>
+
 
 		<p class="body-title-color-font" data-bind="foreach: activechoices">
 			<br><br>
@@ -47,6 +48,7 @@
 			<span class="choice-desc" data-bind='text: desc'/>
 			
 		</p>
+	</div>
 
 	</div>
 
